@@ -1,0 +1,80 @@
+//Sidd.in styles
+
+
+@import "bourbon";
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Serif+Pro:700,400,600);
+
+$font_bold: 'Source Serif Pro', serif;
+$font_normal: 'Source Sans Pro', sans-serif;
+
+$purple_d: #605671;
+$purple_l: #E4DCE4;
+
+$white_d: #F2F2F2;
+
+// Defaults
+body {font-family: $font_normal; font-weight: normal; background: $white_d; color: $purple_d;}
+h1,h2,h3,h4,h5 {font-family: $font_bold; font-weight: 600; color: $purple_d;}
+p {font-size: 24px; letter-spacing: 0.5px; line-height: 40px; margin-bottom: 40px}
+
+.bold {font-family: $font_bold; font-weight: 700; }
+.font2 {font-family: $font_bold; font-weight: 400; font-size: 24px; line-height: 45px;}
+.special, .main_article h2 {font-family: $font_bold; font-weight: 600; font-size: 36px; line-height: 72px; letter-spacing: 1px; border-bottom: 1px solid rgba(96, 86, 113, 0.2); display: inline; padding-bottom: 5px;
+	&:after {content:''; position: relative; width: 100%; height: 40px; display: block;}
+	}
+
+.gap {width: 100%; height: 40px;}
+
+.main_article {padding-top: 60px;}
+
+//header
+header {
+	.header_wrap { width: 800px; margin: 0 auto;
+		.text_wrap {float: left; padding-top: 150px; width: 350px;
+			h1 {font-size: 70px; line-height: 70px;}
+			h2 {font-family: $font_normal; font-size: 14px; letter-spacing: 0.5px; }
+		}
+		.image_wrap { width: 300px; height: 300px; margin: 100px 100px 40px 0px; position: relative; float: left;
+		  img {width:100%; position:relative; z-index:10;}
+		  .overlay {position:absolute; top:0px; left:0px; z-index:11; width:100%; height:100%; background:rgba(96, 86, 113, 0.6);@include transition(all 0.5s ease);}
+		  &:after {content:""; position:absolute; width:100%; height:100%; top:20px; left:-20px; z-index:1; border: 2px solid #605671;@include transition(all 0.5s ease);}
+		  &:before {content:""; position:absolute; width:100%; height:100%; top:-20px; left:20px; z-index:2; border: 2px solid #605671;@include transition(all 0.5s ease);}
+		  &:hover {
+		    &:after {left:10px; top:-10px;}
+		    &:before {left:-10px; top:10px;}
+		    .overlay {background:rgba(96, 86, 113, 0.4);}
+		  }
+		}
+	}
+}
+
+// Siddharth logo
+.sid_logo_link {
+	span{color: #605671;}
+}
+.sid_logo {font-family: $font_bold; width: 100px; height: 100px; border:2px solid #605671; position: relative;
+	span {font-size: 40px; width: 60px; line-height: 40px; letter-spacing: 2px; position: absolute; right: 2px; top:10px; word-break: break-all; text-align: right; @include transition(all 0.5s ease);}
+	&:after {content: ""; position: absolute; top: -2px; right: -2px; width: 100px; height: 100px; border:2px solid #605671; @include transition(all 0.5s ease);}
+	&:hover{
+		span {top:2px; @include transition(all 0.5s ease);}
+		&:after {top: -15px; right: -15px; @include transition(all 0.5s ease);}
+	}
+}
+
+// SVG Slant effect
+svg.slant { pointer-events: none; height: 150px; z-index: 9998; position: relative; padding-top: 5px;}
+svg.fromTop {top: -150px; margin-bottom: -140px;}
+svg.fromBottom {bottom: -150px; margin-top: -140px;}
+.whiteslant path {fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255); stroke-width: 4px;}
+.offwhite path {fill: #f2f2f2; stroke: #f2f2f2; stroke-width: 4px;}
+
+
+.picture_story{
+	.large-3.columns, .large-8.columns{padding-left: 0px; padding-bottom: 0.9375rem;}
+}
+
+//footer follow me
+#follow_me {width: 100%;height: 100vh; background: url('../img/siddharth_ashok_cover.jpg');background-size: cover; background-position: center; position: relative;
+	&:after {content: ""; position: absolute; top:0px; left: 0px; background: rgba(96, 86, 113, 0.6); height: 100%; width: 100%;}
+}
