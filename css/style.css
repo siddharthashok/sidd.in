@@ -1,22 +1,37 @@
 .row {
-  max-width: 900px; }
+  max-width: 1000px; }
+
+.column, .columns {
+  padding-left: 10px;
+  padding-right: 10px; }
 
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: normal;
-  background: #F2F2F2;
-  color: #605671; }
+  background: #384D9D;
+  color: #F6F3EB; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Source Serif Pro", serif;
-  font-weight: 600;
-  color: #605671; }
+  font-weight: 700;
+  color: #F6F3EB; }
 
 p {
   font-size: 24px;
   letter-spacing: 0.5px;
   line-height: 40px;
   margin-bottom: 40px; }
+
+h2 {
+  font-size: 36px;
+  letter-spacing: 1.4px; }
+
+a {
+  color: #F6F3EB;
+  border-bottom: 2px solid #5e6fad; }
+  a:hover, a:focus {
+    background: #5e6fad;
+    color: #ffffff; }
 
 .bold {
   font-family: "Source Serif Pro", serif;
@@ -47,11 +62,13 @@ p {
   padding-bottom: 100px; }
 
 .image-logo-wrap {
-  width: 300px;
-  height: 300px;
-  margin: 100px 100px 40px 0px;
+  width: 250px;
+  height: 250px;
   position: relative;
-  float: left; }
+  float: none;
+  margin-left: 20px;
+  margin-bottom: 60px;
+  margin-top: 27px; }
   .image-logo-wrap img {
     width: 100%;
     position: relative;
@@ -63,7 +80,8 @@ p {
     z-index: 11;
     width: 100%;
     height: 100%;
-    background: rgba(96, 86, 113, 0.4);
+    background: #F6F3EB;
+    opacity: 0.3;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -75,8 +93,8 @@ p {
     height: 100%;
     top: 20px;
     left: -20px;
-    z-index: 1;
-    border: 2px solid #605671;
+    z-index: 12;
+    border: 2px solid #F6F3EB;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -88,8 +106,8 @@ p {
     height: 100%;
     top: -20px;
     left: 20px;
-    z-index: 2;
-    border: 2px solid #605671;
+    z-index: 13;
+    border: 2px solid #F6F3EB;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -102,6 +120,18 @@ p {
     top: 10px; }
   .image-logo-wrap:hover .overlay {
     background: rgba(96, 86, 113, 0.2); }
+
+.sidd {
+  font-size: 48px;
+  line-height: 68px;
+  letter-spacing: 1.9px; }
+  .sidd span {
+    color: #384D9D;
+    background: #F6F3EB;
+    display: inline;
+    padding: 0px 40px 0px 10px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone; }
 
 .sid_logo_link span {
   color: #605671; }
