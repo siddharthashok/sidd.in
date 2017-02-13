@@ -189,25 +189,19 @@ svg.bottomone {bottom: -150px; margin-top: -150px;}
 // Responsive
 
 @media screen and (max-width: 64em) {
-	.column, .columns {
-    padding-left: 60px;
-    padding-right: 60px;
-}
+  .column, .columns {padding-left: 15px;padding-right: 15px;}
 
-header .header_wrap .image_wrap {width: 200px; height: 200px;
-    float: none;
-    margin: 100px auto 30px;}
-header .header_wrap .text_wrap {    float: none;
-    width: 100%;
-    padding-top: 50px;}
-header .header_wrap .text_wrap h1 {font-size: 50px; line-height: 50px; text-align: center;}
-header .header_wrap .text_wrap h2 {text-align: center;}
+  .image-logo-wrap {width: 180px; height: 180px; margin-bottom: 40px; margin-left: 10px;}
+  .image-logo-wrap:before {top: -10px; left: 10px;}
+  .image-logo-wrap:after {top: 10px; left: -10px;}
 
+  .sidd {font-size: 36px; line-height: 52px;}
+  .sidd span {padding: 0px 20px 0px 5px;}
 }
 
 @media screen and (max-width: 39.9375em) {
-	.column, .columns {
-		padding-left: 30px;
-		padding-right: 30px;
-}
+  #about {padding-top: 30px;}
+  .sidd { margin-bottom: 60px;}
+  p { font-size: 18px; letter-spacing: 0.2px; line-height: 30px; margin-bottom: 24px;}
+  h2 { font-size: 28px; letter-spacing: 0.5px;}
 }
