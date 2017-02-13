@@ -1,13 +1,19 @@
 //Sidd.in styles
 
+// Fonts
 $font_bold: 'Source Serif Pro', serif;
 $font_normal: 'Source Sans Pro', sans-serif;
 
+// Colors
 $purple_d: #605671;
 $purple_l: #E4DCE4;
 
 $white_d: #F2F2F2;
 
+$blue: #384D9D;
+$white: #F6F3EB;
+
+// Mixins
 @mixin transition($transition) {
     -moz-transition:    $transition;
     -o-transition:      $transition;
@@ -27,29 +33,20 @@ p {font-size: 24px; letter-spacing: 0.5px; line-height: 40px; margin-bottom: 40p
 	&:after {content:''; position: relative; width: 100%; height: 20px; display: block;}
 	}
 
-.gap {width: 100%; height: 40px;}
-
 .main_article {padding-top: 60px; margin-bottom: 80px;}
 
-//header
-header {
-	.header_wrap {
-		.text_wrap {float: left; padding-top: 150px; width: 350px;
-			h1 {font-size: 70px; line-height: 70px;}
-			h2 {font-family: $font_normal; font-size: 14px; letter-spacing: 0.5px; }
-		}
-		.image_wrap { width: 300px; height: 300px; margin: 100px 100px 40px 0px; position: relative; float: left;
-		  img {width:100%; position:relative; z-index:10;}
-		  .overlay {position:absolute; top:0px; left:0px; z-index:11; width:100%; height:100%; background:rgba(96, 86, 113, 0.4); @include transition(all 0.5s ease);}
-		  &:after {content:""; position:absolute; width:100%; height:100%; top:20px; left:-20px; z-index:1; border: 2px solid #605671; @include transition(all 0.5s ease);}
-		  &:before {content:""; position:absolute; width:100%; height:100%; top:-20px; left:20px; z-index:2; border: 2px solid #605671; @include transition(all 0.5s ease);}
-		  &:hover {
-		    &:after {left:10px; top:-10px;}
-		    &:before {left:-10px; top:10px;}
-		    .overlay {background:rgba(96, 86, 113, 0.2);}
-		  }
-		}
-	}
+#about { padding-top: 100px; padding-bottom: 100px;}
+
+.image-logo-wrap { width: 300px; height: 300px; margin: 100px 100px 40px 0px; position: relative; float: left;
+  img {width:100%; position:relative; z-index:1;}
+  .overlay {position:absolute; top:0px; left:0px; z-index:11; width:100%; height:100%; background:rgba(96, 86, 113, 0.4); @include transition(all 0.5s ease);}
+  &:after {content:""; position:absolute; width:100%; height:100%; top:20px; left:-20px; z-index:1; border: 2px solid #605671; @include transition(all 0.5s ease);}
+  &:before {content:""; position:absolute; width:100%; height:100%; top:-20px; left:20px; z-index:2; border: 2px solid #605671; @include transition(all 0.5s ease);}
+  &:hover {
+    &:after {left:10px; top:-10px;}
+    &:before {left:-10px; top:10px;}
+    .overlay {background:rgba(96, 86, 113, 0.2);}
+  }
 }
 
 // Siddharth logo

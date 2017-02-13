@@ -38,37 +38,25 @@ p {
     height: 20px;
     display: block; }
 
-.gap {
-  width: 100%;
-  height: 40px; }
-
 .main_article {
   padding-top: 60px;
   margin-bottom: 80px; }
 
-header .header_wrap .text_wrap {
-  float: left;
-  padding-top: 150px;
-  width: 350px; }
-  header .header_wrap .text_wrap h1 {
-    font-size: 70px;
-    line-height: 70px; }
-  header .header_wrap .text_wrap h2 {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.5px; }
+#about {
+  padding-top: 100px;
+  padding-bottom: 100px; }
 
-header .header_wrap .image_wrap {
+.image-logo-wrap {
   width: 300px;
   height: 300px;
   margin: 100px 100px 40px 0px;
   position: relative;
   float: left; }
-  header .header_wrap .image_wrap img {
+  .image-logo-wrap img {
     width: 100%;
     position: relative;
-    z-index: 10; }
-  header .header_wrap .image_wrap .overlay {
+    z-index: 1; }
+  .image-logo-wrap .overlay {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -80,7 +68,7 @@ header .header_wrap .image_wrap {
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
-  header .header_wrap .image_wrap:after {
+  .image-logo-wrap:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -93,7 +81,7 @@ header .header_wrap .image_wrap {
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
-  header .header_wrap .image_wrap:before {
+  .image-logo-wrap:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -106,13 +94,13 @@ header .header_wrap .image_wrap {
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
-  header .header_wrap .image_wrap:hover:after {
+  .image-logo-wrap:hover:after {
     left: 10px;
     top: -10px; }
-  header .header_wrap .image_wrap:hover:before {
+  .image-logo-wrap:hover:before {
     left: -10px;
     top: 10px; }
-  header .header_wrap .image_wrap:hover .overlay {
+  .image-logo-wrap:hover .overlay {
     background: rgba(96, 86, 113, 0.2); }
 
 .sid_logo_link span {
