@@ -270,7 +270,8 @@ svg.bottomone {
         text-align: center;
         overflow: hidden;
         font-family: 'Permanent Marker', cursive;
-        margin-top: 15px; }
+        margin-top: 15px;
+        color: #323540; }
     #instagram .instagram-carousel .owl-stage {
       padding: 30px 0px; }
     #instagram .instagram-carousel .owl-item {
