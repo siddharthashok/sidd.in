@@ -35,11 +35,11 @@ h2 {
 
 a {
   color: #dadfe1;
-  border-bottom: 2px solid #5e6fad;
+  border-bottom: 2px solid #3c405f;
 }
 a:hover, a:focus {
-  background: #5e6fad;
-  color: #ffffff;
+  background: #3c405f;
+  color: #dadfe1;
 }
 
 .bold {

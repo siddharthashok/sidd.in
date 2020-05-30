@@ -34,10 +34,9 @@ p {font-size: 24px; letter-spacing: 0.5px; line-height: 40px; margin-bottom: 40p
 
 h2 {font-size: 36px; letter-spacing: 1.4px; margin-bottom: 40px;}
 
-a {color: $white; border-bottom: 2px solid rgb(94, 111, 173);
+a {color: $white; border-bottom: 2px solid #3c405f;
   &:hover, &:focus {
-    // color: #97aaf7;
-    background:rgb(94, 111, 173); color: #ffffff;
+    background:#3c405f; color: $white;
   }
 }
 
