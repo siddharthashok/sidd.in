@@ -394,8 +394,8 @@ svg.bottomone {
 
 @media screen and (max-width: 64em) {
   .column, .columns {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .image-logo-wrap {
@@ -416,8 +416,7 @@ svg.bottomone {
   }
 
   .sidd {
-    font-size: 36px;
-    line-height: 52px;
+    padding-right: 20%;
   }
 
   .sidd span {

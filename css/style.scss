@@ -188,13 +188,16 @@ svg.bottomone {bottom: -150px; margin-top: -150px;}
 // Responsive
 
 @media screen and (max-width: 64em) {
-  .column, .columns {padding-left: 15px;padding-right: 15px;}
+  .column, .columns {padding-left: 20px;padding-right: 20px;}
 
   .image-logo-wrap {width: 180px; height: 180px; margin-bottom: 40px; margin-left: 10px;}
   .image-logo-wrap:before {top: -10px; left: 10px;}
   .image-logo-wrap:after {top: 10px; left: -10px;}
 
-  .sidd {font-size: 36px; line-height: 52px;}
+  .sidd {
+    // font-size: 36px; line-height: 52px;
+    padding-right: 20%;
+  }
   .sidd span {padding: 0px 20px 0px 5px;}
 }
 
